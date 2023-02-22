@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Infinite Popups</title>
+	<script>
+		function openPopup() {
+			setInterval(function() {
+				window.open('', '_blank','width=400,height=400');
+			}, 1000); // Opens a new window every second I can make it to every millisecond but then if I accidently run this, it will be a nightmare to turn off
+		}
+	</script>
+</head>
+<body>
+	<button onclick="openPopup()">Click here</button>
+</body>
+</html>
