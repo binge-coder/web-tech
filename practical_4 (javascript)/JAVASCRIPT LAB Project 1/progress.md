@@ -9,4 +9,5 @@
 7. yes
     b. yes
 8. yes
-9.
+9. no, I don't know enough javascript to make it
+10. yes
