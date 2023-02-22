@@ -1,0 +1,73 @@
+
+/* topleft: 0 0, topright: -312 0, bottomleft: 0 -312, bottomright: -312 -312  */
+
+@media screen and (min-width: 1600px) {
+    /* UL */
+    .myClass {
+        width: 312px;
+        height: 312px;
+        background: url(homer.jpg) 0px 0px ;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    /* .UR  */
+    .myClass {
+        width: 312px;
+        height: 312px;
+        background: url(homer.jpg) -312px 0px ;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    /* .LL  */
+    .myClass {
+        width: 312px;
+        height: 312px;
+        /* background: url(homer.jpg) 0px -312px ; */
+        background: url(homer.jpg) -5px 5px ;
+        background-repeat: no-repeat;
+    } 
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+    /* .LR */
+    .myClass {
+        width: 312px;
+        height: 312px;
+        background: url(homer.jpg) -312px -312px ;
+        background-repeat: no-repeat;
+    }    
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+    /* .LL  */
+    .myClass {
+        width: 312px;
+        height: 312px;
+        background: url(homer.jpg) 0px -312px ;
+        background-repeat: no-repeat;
+    } 
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px){
+    /* .UR  */
+    .myClass {
+        width: 312px;
+        height: 312px;
+        background: url(homer.jpg) -312px 0px ;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /* UL */
+    .myClass {
+        width: 312px;
+        height: 312px;
+        background: url(homer.jpg) 0px 0px ;
+        background-repeat: no-repeat;
+    }
+}

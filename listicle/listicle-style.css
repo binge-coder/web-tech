@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+#pageTitle {
+
+    /* image */
+    background-image: url('images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    text-align: center;
+    padding-top: 250px ;
+}
+#spanTitle {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+}
+
+.textHeading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(51, 51, 51) ;       
+    position: relative;
+}
+.mainContainer{
+    width: 66.67%;
+    margin: 0 auto;
+}
+.mainContainer ol li{
+    list-style-position: outside;
+    color: rgba(0, 0, 0, 0.25) ;
+    padding-left: 40px;
+    /* font: 36px; */
+}
+.link a {
+    color: #42b4d6;
+    text-decoration: none;
+}
+.link a:hover {
+    text-decoration: underline;
+}
+.para {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    line-height: 32px;
+}
+.para ul {
+    list-style: none;
+}
+.para ul li {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    line-height: 32px;
+
+}
+.recommendation {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.sixtypx_whitespace{
+    height: 60px;
+}
+.twentypx_whitespace{
+    height: 20px;
+}
+.onetwentypx_whitespace{
+    height: 120px;
+}
+.imagesText{
+    width: inherit;
+}
+.imagesText img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
