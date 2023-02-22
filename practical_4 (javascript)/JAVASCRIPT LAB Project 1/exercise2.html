@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #2: Changing colors</title>
+    <style>
+        #mydiv {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+    <!-- <script>
+        /* TODO: write JS code here */
+        // document.addEventListener("click", changeColor);
+        
+        var count = 0;
+        var obj = document.getElementById('mydiv');
+        obj.style.backgroundColor = "blue";         
+        obj.addEventListener("click", changeColor);
+        function changeColor()
+        {
+            // var obj = document.getElementById('mydiv');
+            if(count == 0)
+            {
+                obj.style.backgroundColor = "red"; 
+                count++;
+            }
+            else if(count == 1)
+            {
+                obj.style.backgroundColor = "green"; 
+                count++;
+            }
+            else if(count == 2)
+            {
+                obj.style.backgroundColor = "blue"; 
+                count = 0;
+            }
+        }
+        document.addEventListener("click", changeColor);
+    </script> -->
+</head>
+<body>
+<div id="mydiv"></div>
+<script>
+    /* TODO: write JS code here */
+    // document.addEventListener("click", changeColor);
+    
+    var count = 0;
+    var obj = document.getElementById('mydiv');
+    obj.style.backgroundColor = "blue";         
+    obj.addEventListener("click", changeColor);
+    function changeColor()
+    {
+        // var obj = document.getElementById('mydiv');
+        if(count == 0)
+        {
+            obj.style.backgroundColor = "red"; 
+            count++;
+        }
+        else if(count == 1)
+        {
+            obj.style.backgroundColor = "green"; 
+            count++;
+        }
+        else if(count == 2)
+        {
+            obj.style.backgroundColor = "blue"; 
+            count = 0;
+        }
+    }
+</script>
+</body>
+</html>

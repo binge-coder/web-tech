@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #7: Simple playlist</title>
+    <link rel="stylesheet" href="exercise7.css">
+
+</head>
+<body>
+
+<form>
+    <input type="text" id="songTextInput" size="40" placeholder="Song name">
+    <input type="button" id="addButton" value="Add Song">
+</form>
+
+<ul id="playlist">
+</ul>
+
+<script>
+    var songNameObj = document.getElementById('songTextInput');
+    var playList = document.getElementById('playlist');
+    var myaddButton = document.getElementById('addButton');
+    function addSong()
+    {
+        var listNode = document.createElement('li');
+        listNode.textContent = songNameObj.value; 
+        playList.appendChild(listNode);
+        songNameObj.value = "";
+    }
+    myaddButton.addEventListener("click",addSong);
+</script>
+
+</body>
+</html>
+

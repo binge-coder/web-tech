@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #7: Simple playlist</title>
+    <link rel="stylesheet" href="exercise7.css">
+    <style>
+        ul#playlist li {
+            position: relative; /* add position relative to li element */
+            border-bottom: 1px solid #a9a9a9;
+            padding: 10px;
+            background-image: linear-gradient(#f9f9f9, #e3e3e3);
+        }
+
+        ul#playlist li button.deleteButton {
+            position: absolute; /* add position absolute to delete button */
+            top: 5px; /* adjust top position as needed */
+            right: 5px; /* adjust right position as needed */
+        }
+    </style>
+
+</head>
+<body>
+
+<form>
+    <input type="text" id="songTextInput" size="40" placeholder="Song name">
+    <input type="button" id="addButton" value="Add Song">
+</form>
+
+<ul id="playlist">
+</ul>
+
+<script>
+    
+    var songNameObj = document.getElementById('songTextInput');
+    var playList = document.getElementById('playlist');
+    var myaddButton = document.getElementById('addButton');
+
+    function addSong() {
+        var listNode = document.createElement('li');
+        var deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.classList.add('deleteButton');
+        deleteButton.addEventListener('click', function() {
+            listNode.parentNode.removeChild(listNode);
+        });
+        listNode.textContent = songNameObj.value;
+        listNode.appendChild(deleteButton);
+        playList.appendChild(listNode);
+        songNameObj.value = '';
+}
+
+myaddButton.addEventListener('click', addSong);
+
+</script>
+
+</body>
+</html>
+

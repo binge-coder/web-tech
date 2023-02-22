@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #5: Input check</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        .err {
+            color: red;
+            font-size: 0.7em;
+        }
+    </style>
+    <!-- <script>
+        /* TODO complete this part */
+    </script> -->
+</head>
+<body>
+
+<form name="pw">
+    <table>
+        <tr>
+            <td>Password (min 6 characters):</td>
+            <td><input type="password" name="password1" id="password1" size="10" placeholder="Password"></td>
+            <td>
+                <div id="pw1_check" class="err"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Repeat password:</td>
+            <td><input type="password" name="password2" id="password2" size="10" placeholder="Password"></td>
+            <td>
+                <div id="pw2_check" class="err"></div>
+            </td>
+        </tr>
+    </table>
+
+    <input type="submit" value="Submit" id="submitBtn"/>
+</form>
+<script>
+    var p1 = document.getElementById('password1');
+    var p2 = document.getElementById('password2');
+
+    var p1Err = document.getElementById('pw1_check');
+    var p2Err = document.getElementById('pw2_check');
+
+    var suBtn = document.getElementById('submitBtn');
+    suBtn.style.display = "none";
+
+    function sizeConstraint(obj)
+    {
+        if(obj.value.length < 6)
+        {
+            p1Err.innerText = "Error. password too small";
+            suBtn.style.display = "none";
+        }
+        else
+        {
+            p1Err.innerText = "";
+        }
+    }
+
+    function checkSimilar(obj1, obj2)
+    {
+        if(obj1.value != obj2.value)
+        {
+            p2Err.innerText = "Error. passwords don't match";
+            suBtn.style.display = "none";
+        }
+        else
+        {
+            p2Err.innerText = "";
+            // show submit button
+            suBtn.style.display = "block";
+        }
+    }
+
+    p1.addEventListener("input", function() {sizeConstraint(p1)}); 
+    p2.addEventListener("input", function() {checkSimilar(p1,p2)}); 
+
+</script>
+</body>
+</html>
+
