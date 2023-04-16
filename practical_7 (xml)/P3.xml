@@ -1,0 +1,36 @@
+<order id="1234" description="Order for Books" request_date="2023-04-08">
+  <line_item>
+    <book id="B001">
+      <book_name>Harry Potter and the Philosopher's Stone</book_name>
+      <genre>fantasy</genre>
+      <publish_date>1997-06-26</publish_date>
+      <author>
+        <bio>British novelist, philanthropist, film producer, television producer and screenwriter.</bio>
+        <last_name>Rowling</last_name>
+        <first_name>J.K.</first_name>
+      </author>
+      <author>
+        <bio>British illustrator and author best known for illustrating and writing the Winnie-the-Pooh books.</bio>
+        <last_name>Shepard</last_name>
+        <first_name>Ernest H.</first_name>
+        <pen_name>E. H. Shepard</pen_name>
+      </author>
+    </book>
+    <quantity>2</quantity>
+    <price>10.99</price>
+  </line_item>
+  <line_item>
+    <book id="B002">
+      <book_name>The Da Vinci Code</book_name>
+      <genre>thriller</genre>
+      <publish_date>2003-03-18</publish_date>
+      <author>
+        <bio>American author of suspense novels.</bio>
+        <last_name>Brown</last_name>
+        <first_name>Dan</first_name>
+      </author>
+    </book>
+    <quantity>1</quantity>
+    <price>12.99</price>
+  </line_item>
+</order>
